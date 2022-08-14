@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  --clr-dark-blue: hsl(179, 62%, 43%);
+  --clr-gray: hsl(218, 22%, 67%);
+  --clr-light-gray: #b2b7bf;
+  --clr-yellow: hsl(71, 73%, 54%);
+  --clr-light-blue: hsl(179, 47%, 51%);
+  --clr-bg: #e6eff6;
+  --padding-inline: 2.5rem;
+  --padding-block: 1.25rem;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: var(--clr-bg);
+}
+h2 {
+  color: var(--clr-dark-blue);
+}
+h3 {
+  color: var(--clr-yellow);
+}
+.title-blue,
+.dark-blue,
+.light-blue,
+button {
+  color: white;
+}
+.dark-blue {
+  background-color: var(--clr-dark-blue);
+  grid-area: dark-box;
+  border-bottom-left-radius: 10px;
+}
+.light-blue {
+  background-color: var(--clr-light-blue);
+  grid-area: light-box;
+  border-bottom-right-radius: 10px;
+}
+.white {
+  background-color: white;
+  grid-area: white-box;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.white,
+.dark-blue,
+.light-blue {
+  padding-inline: var(--padding-inline);
+  padding-block: var(--padding-block);
+}
+.text-white {
+  color: var(--clr-light-gray);
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+.light-text,
+.text-blue {
+  font-weight: 400;
+}
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "white-box white-box"
+    "dark-box light-box";
+  width: 70%;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgb(162, 162, 162);
+}
+button {
+  background-color: var(--clr-yellow);
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 2.5rem;
+  box-shadow: 0px 3px 10px rgb(137, 137, 137);
+  margin-block: 12px;
+}
+button:hover{
+    background-color: hsl(71, 55%, 45%);
+    color: rgb(196, 196, 154);
+    cursor: pointer;
+}
+.price{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'number txt';
+    width: fit-content;
+    margin-block: -8px;
+    
+}
+p.light-text{
+    font-size: 16px;
+    grid-area: txt;
+    margin: auto;
+    color: var(--clr-bg);
+}
+.nbr{
+    grid-area: number;
+    font-size: 3em;
+    margin: 0px;
+    font-weight: 700;
+}
+.light{
+    margin-top: 5px;
+    color: var(--clr-bg);
+    line-height: 1.25rem;
+}
+
+
