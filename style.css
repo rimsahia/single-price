@@ -131,13 +131,18 @@ p.light-text{
 .dark-blue,
 .light-blue{
   width: 100%;
+  padding-block: 0px;
+  
 }
 .dark-blue{
   border-radius: 0px;
+  
 }
 .light-blue{
   border-bottom-left-radius: 10px;
 }
+.button{
+
 }
 
 
