@@ -131,8 +131,9 @@ p.light-text{
 .dark-blue,
 .light-blue{
   width: 100%;
-  padding-block: 0px;
+  padding-bottom: 0px;
   padding-top:1rem;
+  padding-inline: 1rem;
 }
 .dark-blue{
   border-radius: 0px;
