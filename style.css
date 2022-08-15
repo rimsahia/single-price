@@ -132,7 +132,7 @@ p.light-text{
 .light-blue{
   width: 100%;
   padding-block: 0px;
-  
+  padding-top:1rem;
 }
 .dark-blue{
   border-radius: 0px;
